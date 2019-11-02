@@ -1,0 +1,120 @@
+// Colour
+$site-color : #111;
+$icon-color: #959595;
+$white: #FFFFFF;
+
+// Gray Colors
+$gray-100: #f4f5f9 !default;
+$gray-200: #e4e5e9 !default;
+$gray-300: #dee2ed !default;
+$gray-400: #c4c7cc !default;
+$gray-500: #9aa5ab !default;
+$gray-600: #556066 !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #2d3a49 !default;
+$black:    #000 !default;
+
+$light-green: #d4edda;
+
+$page-head-bg: $white;
+
+$theme-gradient:  linear-gradient(to right, rgb(0, 152, 215),rgb(0, 176, 145));
+
+// Header
+$header-icon-size: 1.8rem;
+
+// Table
+$table-header-bg : $white;
+
+// Body Colour
+$body-bg: $gray-100;
+$body-color: #111;
+
+// Border Radius
+$border-radius:     .1rem !default;
+
+$theme-primary :               #0099d4;
+
+$theme-secondary: #00b091;
+
+//Font Family
+$font-family-base :           'Montserrat', sans-serif;
+$font-custom-base :           0.875rem;
+$font-custom-medium:          1.275rem;
+$font-custom-large:           1.5rem;
+$font-custom-default:         1rem;
+
+// bootstrap overwrite
+$font-size-base:              $font-custom-base;
+$font-size-sm:                $font-size-base * .875 !default;
+$font-size-lg:                $font-size-base * 1.210 !default;
+$font-size-xl:                $font-size-base * 1.575 !default;
+
+//Theme Modify
+$theme-colors: (
+  "primary":                  $theme-primary ,
+  "secondary":                $theme-secondary
+);
+$header-bg:                    #343f4f;
+//Common Border Radius
+$border-radius:               .18rem;
+
+//Button 
+$input-btn-padding-y:         .375rem !default;
+$input-btn-padding-x:         1rem !default;
+$input-focus-border-color:    $theme-primary;
+$btn-font-weight:             400;
+
+//Custom Colors
+$auth-wrapper :               #f8f9fa;
+
+//Form
+$input-btn-line-height:        1.5;
+$input-btn-focus-box-shadow:   none;
+
+//Workspace
+$workspace-tool-width:         20rem;
+$workspace-editor-bc:          gray('100');
+
+//Font-weight
+$font-weight-normal :      400;
+$font-weight-bold:         500;
+$font-extra-bold :         600; 
+
+// Z Index
+$theme-action-zindex : 1;
+
+// Modal
+$modal-md:    600px !default;
+$modal-sm:    400px !default;
+
+// Box Shadow
+$enable-shadows:                              false !default;
+$box-shadow-sm:               0 .05rem .25rem rgba($black, .075) !default;
+$box-shadow:                  0 .5rem 1rem rgba($black, .15) !default;
+$box-shadow-lg:               0 1rem 3rem rgba($black, .175) !default;
+
+
+// Forms
+$input-border-color:                    $gray-300 !default;
+$input-placeholder-color:               $gray-400 !default;
+$input-color:                           $gray-900 !default;
+$custom-control-indicator-border-color: $input-border-color !default;
+$custom-control-indicator-size:         1.15rem !default;
+
+
+// Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+$zindex-page-header:                900  !default;
+$zindex-header:                     920  !default;
+$zindex-dropdown:                   1000 !default;
+$zindex-sticky:                     1020 !default;
+$zindex-fixed:                      1030 !default;
+$zindex-modal-backdrop:             1040 !default;
+$zindex-modal:                      1050 !default;
+$zindex-popover:                    1060 !default;
+$zindex-tooltip:                    1070 !default;
+$custom-alert:                      1080 !default;

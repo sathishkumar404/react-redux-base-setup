@@ -1,0 +1,114 @@
+.ReactTable.site-table {
+    border: none;
+    .rt-tbody .rt-td, .rt-thead .rt-th {
+        border-right: none;
+    }
+    .rt-thead.-header{
+        box-shadow: none;
+    }
+    .rt-thead .rt-th {
+        padding:0.875rem;
+        background: $table-header-bg;
+        text-align: left;
+        font-weight:$font-extra-bold ;
+        min-height: 3rem;
+        border-bottom: 1px solid gray('200');
+        background: #333333;
+        color: #ffffff;
+    }
+    .rt-tbody .rt-td {
+        padding: 0.875rem;
+        overflow: visible;
+        background: $white;
+        white-space: normal;
+        min-height: 4.25rem;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    .-pagination {
+        box-shadow: none;
+        border-top: 1px solid gray('400');
+        padding-top: 0.875rem;
+        padding-bottom: 0.875rem;
+    }
+    .rt-tr-group:hover {
+        .table-action {
+            display: flex !important;
+        }
+    }
+    .rt-tr{
+        align-items: center;
+    }
+
+  .-pagination{
+    width: 15rem;
+    position: absolute;
+    right: 0;
+    top: -3.8rem;
+    box-shadow: none;
+    border: none;
+    padding: 0;
+    select, input {
+        padding-top:4px;
+        padding-bottom: 4px; 
+    }
+    .select-wrap{
+        display: none;
+    }
+    .-btn {
+        border: 1px solid $gray-600;
+        background: $gray-600 !important;
+        color: $white;
+    }
+    .-pageInfo{
+        margin: 0px 10px;
+    }
+  }
+}
+.basic-table {
+    &.table th {
+        font-weight: $font-weight-bold;
+        border-bottom: none;
+    }
+    &.table  .thead-light th {
+        background: $gray-100;
+    }
+    tr:hover {
+        .table-action {
+            display: flex !important;
+        }
+    }
+}
+.table-action {
+    width: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    color: gray('600');
+    svg {
+      cursor: pointer;
+    }
+}
+
+.table-select{
+    width: 10rem;
+}
+.card-table{
+    .rt-tr-group{
+        border: 1px solid $gray-200 !important;
+        border-radius: $border-radius;
+        margin-bottom: 1rem;
+    }
+    .ReactTable.site-table .rt-thead.-header{
+        border: 1px solid $gray-300 !important;
+        margin-bottom: 1rem;
+        .rt-th{
+            border: none;
+        }
+    }
+    .ReactTable.site-table{
+        min-height: 10rem;
+    }
+}

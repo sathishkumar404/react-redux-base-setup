@@ -1,0 +1,333 @@
+.form-section {
+    padding: 1.5rem;
+    border-bottom: 1px solid gray('200');
+    background: $white;
+}
+.form-control:disabled, .form-control[readonly] {
+    background-color: #fbfbfd;
+}
+.form-group{
+    position: relative;
+    label {
+        color: $gray-600;
+    }
+}
+.form-label label {
+    color: $gray-600;
+}
+.empl-details .form-label .badge {
+    font-size: 85%;
+    padding: 0.275rem 0.5rem;
+}
+.form-view-section{
+    padding: 1rem 0;
+    border-bottom: 1px solid gray('200');
+    background: $white;
+    margin-bottom: 1rem;
+    .form-section-title {
+        color: $gray-800;
+        font-size: 1rem;
+    }
+}
+.form-view-content{
+    background: $white;
+    padding: 1rem 1.5rem;
+}
+.form-section-title {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-bold;
+    color: $theme-primary;
+    margin-bottom: 1.25rem;
+}
+.form-footer {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-top: 1px solid gray('400');
+    background: $white;
+}
+.form-action{
+    height: 3.5rem;
+    align-items: center;
+    display: flex;
+}
+.form-wrapper{
+    padding-bottom: 4rem;
+}
+.invalid-tooltip{
+    right: 0;
+}
+.form-select, .date-picker-group{
+    &.is-invalid {
+        .invalid-tooltip{
+          display: block;
+        }
+        .css-vj8t7z{
+            border-color: theme-color('danger');
+        }
+    }
+}
+.date-picker-group {
+    &.is-invalid {
+        .DayPickerInput input{
+            border-color: theme-color('danger');
+        }
+        .input-group-text{
+            border-color: theme-color('danger');
+        }
+    }
+}
+.col-number-input .form-control {
+    width: 3.275rem;
+    flex: 0;
+    padding-left: 0.5rem;
+    padding-right: 0.2rem;
+}
+.col-number-input {
+    .input-group{
+        flex-wrap: nowrap;
+    }
+    .invalid-tooltip{
+        display: none;
+    }
+}
+.date-range-picker {
+    .DateRangePicker{
+        display: block;
+        flex: 1;
+    }
+    .DateRangePickerInput{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-radius: $border-radius;
+        border-color: $input-border-color;
+    }
+    .DateInput__small{
+        width: auto;
+        border-radius: $border-radius;
+    }
+    .DateInput_input__small {
+        line-height: 21px;
+        padding: 7px 16px 5px;
+        border: none !important;
+        border-radius: $border-radius;
+    }
+    
+}
+.start-validate {
+    .invalid-tooltip{
+        left: 0;
+        right: auto;
+    }
+}
+.color-input-box {
+    width: 1.3rem;
+    height: 1.3rem;
+    position: absolute;
+    right: 0.5rem;
+}
+.color-dropdown {
+    display: block;
+    .dropdown-menu {
+        padding: 0;
+        border: 0;
+        margin-top: 0.8rem;
+    }
+}
+.color-input {
+    position: relative;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.form-select {
+    .css-vj8t7z, .css-2o5izw{
+        min-height: 35px;
+        box-shadow: none;
+        border-color: $input-border-color !important;
+    }
+    .css-1ep9fjw, .css-1uq0kb5{
+        padding: 6px 8px;
+    }
+    .css-10nd86i:focus{
+        outline: none !important;
+    }
+    .css-d8oujb{
+        display: none;
+    }
+}
+.label-title {
+    font-size: 1rem;
+    font-weight: $font-weight-bold;
+    margin-bottom: 0.825rem;
+}
+.ql-container.ql-snow, .ql-toolbar.ql-snow, .SingleDatePickerInput__withBorder{
+    border-color: $input-border-color !important;
+}
+
+// Fields
+.fields-card{
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    background: $white;
+    border: 1rem solid $white;
+    .form-section{
+        padding: 0;
+        border: none;
+        margin: 0;
+    }
+    &.has-dropped {
+        border: 1rem solid #ccebf6 !important;
+    }
+    &.is-dragging-over{
+        border: 1rem solid #ccebf6 !important;
+        > li {
+            border: 1px dashed $theme-primary !important;
+            width: 100% !important;
+            display: block !important;
+        }
+        .card-invisible{
+            > li {
+                height: 0 !important;
+                margin: 0 !important;
+            }
+        }
+        &.has-fields {
+            > li {
+                border: none !important;
+                &::after {
+                  display: none;
+                }
+            }
+        }    
+       > li {
+         height: 2.875rem !important;
+         margin-top: 0.875rem !important;
+         &::after {
+            content: "Drop here...";
+            text-align: center;
+            display: flex;
+            width: 100%;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+       }
+    }
+}
+.list-dragger {
+    border-radius: 0 !important;
+    &.is-dragging{
+        border: 1px dashed $theme-primary;
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+    &:hover {
+        .drag-delete{
+           opacity: 1;
+        }
+    }
+}
+.fields-list-group{
+    width: 66.66%;
+}
+.fields-section{
+    &.emp-fields-section {
+      padding-top: 5.5rem !important;
+    }
+    padding-bottom: 4rem;
+    margin-right: 0 !important;
+}
+.drop-preview {
+    border: 1px dashed $theme-primary;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem !important;
+}
+.new {
+    height: 200px;
+}
+.drop-item {
+    .form-group {
+        margin-bottom: 2rem;
+    }
+}
+.card-invisible{
+    opacity: 0.2;
+}
+.list-group {
+   &.list-horizontal {
+    border-right: 1px solid $gray-200;
+    border-bottom: 1px solid $gray-200;
+    flex-direction: row;
+    flex-wrap: wrap;
+    .list-group-item{
+        border-right: 0;
+        border-radius: 0 !important;
+        width: 33.33%;
+        &:last-child{
+            border-bottom: 0;
+        }
+    }
+   }
+}
+.drag-delete {
+    font-size: 1.275rem;
+    position: absolute;
+    left: 100%;
+    top: 30%;
+    bottom: 0;
+    margin-left: 0.4rem;
+    color: $gray-600;
+    opacity: 0;
+}
+.css-17a6g5h {
+    .text-muted {
+        color: #ffffff !important;
+    }
+}
+.select-border .css-11unzgr > div {
+    border-bottom: 1px solid $gray-100;
+    &:last-child{
+        border-bottom: none;
+    }
+}
+// File Preview
+.custom-file-preview {
+    padding: 0.475rem;
+    border: 1px solid $gray-200;
+    border-radius: $border-radius;
+    position: relative;
+    .file-close-icon{
+        position: absolute;
+        top: 0;
+        right: 0;
+        cursor: pointer;
+        svg {
+            font-size: 1.875rem;
+            color: $gray-700;
+        }
+    }
+    .delete-file {
+       right: 1rem !important;
+    }
+    .download-file, .delete-file {
+        cursor: pointer;
+        position: absolute;
+        right: 2.5rem;
+        top: 0;
+        font-size: 1.175rem;
+        color: $gray-600;
+    }
+    .file-preview-icon {
+        font-size: 2.875rem;
+        color: $gray-500;
+    }
+}
+.css-1hwfws3{
+    padding: 2px 15px !important;
+}

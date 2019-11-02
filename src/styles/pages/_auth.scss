@@ -1,0 +1,21 @@
+.auth-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    > .card {
+        width: 28rem;
+    }
+    > .signupcard {
+        width:50rem;
+    }
+    .css-1492t68 {
+        color: hsl(0,0%,75%);
+    }
+}
+.auth-logo {
+    width: 10rem;
+}
+.auth-btn .btn{
+    font-weight: $font-weight-bold
+}
